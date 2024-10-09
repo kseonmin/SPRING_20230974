@@ -1,14 +1,13 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.domain.TestDB;
+import com.example.demo.model.service.TestService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import com.example.demo.model.domain.TestDB;
-import com.example.demo.model.service.TestService;
-
 
 @Controller
 public class DemoController {
@@ -23,7 +22,7 @@ public class DemoController {
     
     @GetMapping("/about_detailed")
     public String about() {
-    return "about_detailed";
+        return "about_detailed";
     }
 
     @GetMapping("/test1")
@@ -45,5 +44,9 @@ public class DemoController {
         return "testdb";
     }
 
+    // @GetMapping("/article_list")
+    // public String article_list() {
+    //     return "article_list";  
+    // }
 
 }
