@@ -39,7 +39,7 @@ public class Board {
         this.title = title;
         this.content = content;
         this.user = user;
-        this. newdate = newdate;
+        this.newdate = newdate;
         this.count = count;
         this.likec = likec;
     }
