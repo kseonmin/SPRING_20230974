@@ -15,13 +15,6 @@ public class AddArticleRequest {
     private String count;
     private String likec;
 
-    // public Article toEntity(){
-    //     return Article.builder()
-    //         .title(title)
-    //         .content(content)
-    //         .build();
-    // }
-
     public Board toEntity(){
         return Board.builder()
             .title(title)
