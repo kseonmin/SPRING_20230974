@@ -22,6 +22,7 @@ public class SecurityConfig { // 스프링에서 보안 관리 클래스
                 })
                 )
                 // .csrf(withDefaults())
+                .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session
                         .invalidSessionUrl("/session-expired") // 세션 만료시 이동 페이지
                         .maximumSessions(1) // 사용자 별 세션 최대 수
